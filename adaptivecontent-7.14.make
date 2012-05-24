@@ -4,20 +4,11 @@ api = 2
 projects[drupal][version] = "7.14"
 
 ; Modules
-projects[apachesolr][subdir] = "contrib"
-projects[apachesolr][version] = "1.0-beta19"
-
-projects[backup_migrate][subdir] = "contrib"
-projects[backup_migrate][version] = "2.3"
-
 projects[coder][subdir] = "development"
 projects[coder][version] = "1.0"
 
 projects[ckeditor_link][subdir] = "contrib"
 projects[ckeditor_link][version] = "2.2"
-
-projects[content_access][subdir] = "contrib"
-projects[content_access][version] = "1.2-beta1"
 
 projects[context][subdir] = "contrib"
 projects[context][version] = "3.0-beta2"
@@ -31,9 +22,6 @@ projects[context_inline_editor][patch][] = "http://drupal.org/files/filter_conte
 
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.0"
-
-projects[danishstemmer][subdir] = "contrib"
-projects[danishstemmer][version] = "1.1"
 
 projects[date][subdir] = "contrib"
 projects[date][version] = "2.5"
@@ -52,12 +40,6 @@ projects[diff][version] = "2.0"
 
 projects[entity][subdir] = "contrib"
 projects[entity][version] = "1.0-rc1"
-
-projects[facetapi][subdir] = "contrib"
-projects[facetapi][version] = "1.0-rc4"
-
-projects[fb_social][subdir] = "contrib"
-projects[fb_social][version] = "2.0-beta4"
 
 projects[features][subdir] = "contrib"
 projects[features][version] = "1.0-rc2"
@@ -82,9 +64,6 @@ projects[google_analytics][version] = "1.2"
 
 projects[html5_tools][subdir] = "contrib"
 projects[html5_tools][version] = "1.1"
-
-projects[job_scheduler][subdir] = "contrib"
-projects[job_scheduler][version] = "2.0-alpha2"
 
 projects[jquery_update][subdir] = "contrib"
 projects[jquery_update][version] = "2.2"
@@ -131,12 +110,6 @@ projects[metatag][version] = "1.0-alpha4"
 projects[module_filter][subdir] = "contrib"
 projects[module_filter][version] = "1.6"
 
-projects[multiform][subdir] = "contrib"
-projects[multiform][version] = "1.0-beta2"
-
-projects[nanosoap][subdir] = "contrib"
-projects[nanosoap][version] = "1.0"
-
 projects[nodespotbox][subdir] = "contrib"
 projects[nodespotbox][version] = "1.6"
 
@@ -146,14 +119,8 @@ projects[omega_tools][version] = "3.0-rc4"
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.2"
 
-projects[page_title][subdir] = "contrib"
-projects[page_title][version] = "2.5"
-
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][version] = "1.0"
-
-projects[pathologic][subdir] = "contrib"
-projects[pathologic][version] = "1.4"
 
 projects[redirect][subdir] = "contrib"
 projects[redirect][version] = "1.0-beta4"
@@ -173,28 +140,11 @@ projects[transliteration][version] = "3.0"
 projects[views][subdir] = "contrib"
 projects[views][version] = "3.3"
 
-;projects[views_infinite_scroll][subdir] = "contrib"
-;projects[views_infinite_scroll][version] = "1.x-dev"
-;projects[views_infinite_scroll][patch][] = "http://drupal.org/files/issues/load-more-content-by-click-event-1044144.patch"
-;projects[views_infinite_scroll][patch][] = "http://raw.github.com/bysted/makefiles/master/patchs/infinite_scroll_markup.patch"
-
 projects[views_slideshow][subdir] = "contrib"
 projects[views_slideshow][version] = "3.0"
 
 projects[webform][subdir] = "contrib"
 projects[webform][version] = "3.17"
-
-projects[workbench][subdir] = "contrib"
-projects[workbench][version] = "1.1"
-
-projects[workbench_files][subdir] = "contrib"
-projects[workbench_files][version] = "1.0"
-
-projects[workbench_media][subdir] = "contrib"
-projects[workbench_media][version] = "1.0"
-
-projects[workbench_moderation][subdir] = "contrib"
-projects[workbench_moderation][version] = "1.1"
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.1"
@@ -206,16 +156,17 @@ projects[coffee][version] = "1.0"
 projects[fences][subdir] = "contrib"
 projects[fences][version] = "1.0"
 
+projects[adaptivecontent][subdir] = "contrib"
+projects[adaptivecontent][type] = "module"
+projects[adaptivecontent][download][type] = "git"
+projects[adaptivecontent][download][branch] = "7.x-1.0"
+projects[adaptivecontent][download][url] = git@github.com:woeldiche/adaptivecontent.git
+
 ; Libraries
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
 libraries[ckeditor][directory_name] = "ckeditor"
 libraries[ckeditor][destination] = "libraries"
-
-libraries[tinymce][download][type] = "get"
-libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymce/tinymce_3.4.2.zip"
-libraries[tinymce][directory_name] = "tinymce"
-libraries[tinymce][destination] = "libraries"
 
 libraries[jquery.cycle][download][type] = "get"
 libraries[jquery.cycle][download][url] = "https://raw.github.com/malsup/cycle/master/jquery.cycle.all.js"
@@ -230,8 +181,3 @@ libraries[autopager][destination] = "libraries"
 ; Themes
 projects[omega][type] = "theme"
 projects[omega][version] = "3.1"
-
-projects[itkore][type] = "theme"
-projects[itkore][download][type] = "git"
-projects[itkore][download][url] = "git@github.com:woeldiche/itkore.git"
-;projects[itkore][download][revision] = "v0.4"
